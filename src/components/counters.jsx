@@ -44,6 +44,7 @@ class Counters extends Component {
     render() { 
         return (
         <div>
+            <h2>React Counter demo </h2>
             <button onClick={this.reset}  className="btn-sm m-2">Reset</button>
             {this.state.counters.map(counter => <Counter onDelete={this.handleDelete} 
             key={ counter.id} 
